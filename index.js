@@ -1,28 +1,9 @@
-import express from 'express';
-import cors from 'cors';
+import app from './app.js';
+import http from 'http';
 
-const app = express();
 const port = 3000;
+const server = http.createServer(app);
 
-app.use(cors());
-app.use(express.json());
-
-app.get('/', (req, res) => {
-  res
-    .status(200)
-    .send(
-      'You have reached the Jaguar payment service. Please send a POST request to /payment (no body required).'
-    );
-});
-
-app.post('/payment', (req, res) => {
-  res.status(200).send({
-    message:
-      'You have paid protection money to the Jaguars. Your safety is guaranteed for now.',
-    amoundPaid: 420,
-  });
-});
-
-app.listen(port, () => {
+server.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
