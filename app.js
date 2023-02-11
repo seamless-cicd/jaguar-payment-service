@@ -18,7 +18,7 @@ app.post('/payment', (req, res) => {
   res.status(200).send({
     message:
       'You have paid protection money to the Jaguars. Your safety is guaranteed for now!',
-    amoundPaid: 420,
+    amoundPaid: 350,
   });
 });
 
