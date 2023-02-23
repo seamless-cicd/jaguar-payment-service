@@ -10,15 +10,14 @@ describe('GET /', () => {
     );
   });
 
-  /* EXAMPLE TEST FAILURE
-  it('fails a test', async () => {
-    const response = await request(app).get('/');
-    expect(response.statusCode).toBe(200);
-    expect(response.text).toBe(
-      'You have reached the Panther payment service. Please send a POST request to /payment (no body required).'
-    );
-  });
-  */
+  // EXAMPLE TEST FAILURE
+  // it('fails a test', async () => {
+  //   const response = await request(app).get('/');
+  //   expect(response.statusCode).toBe(200);
+  //   expect(response.text).toBe(
+  //     'You have reached the Panther payment service. Please send a POST request to /payment (no body required).'
+  //   );
+  // });
 });
 
 describe('POST /payment', () => {
