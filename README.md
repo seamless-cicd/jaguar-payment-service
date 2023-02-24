@@ -1,3 +1,1 @@
 # Jaguar Payment Service
-
-- Update
