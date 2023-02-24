@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
   res
     .status(200)
     .send(
-      'You have reached the Jaguar payment service. Please send a POST request to /payment (no body required)!!!'
+      'You have reached the Jaguar payment service. Please send a POST request to /payment (no body required)!!!!!'
     );
 });
 
